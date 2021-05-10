@@ -21,4 +21,6 @@ Once in a terminal state, the AI will assign an arbitrary positive score (+10) f
 Using this strategy, Minimax avoids losing to the human player.
 
 ## References
-Guide to making your Tic Tac Toe game unbeatable by using the **Minimax Algorithm** ~ [freeCodeCamp](https://www.freecodecamp.org/news/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37/)
+~> Minimax algorithm ~ [Wikipedia](https://en.wikipedia.org/wiki/Minimax#Minimax_algorithm_with_alternate_moves) 
+
+~> Guide to making your Tic Tac Toe game unbeatable by using the **Minimax Algorithm** ~ [freeCodeCamp](https://www.freecodecamp.org/news/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37/)
