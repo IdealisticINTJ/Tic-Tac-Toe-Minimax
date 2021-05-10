@@ -4,13 +4,13 @@ I tried building an unbeatable Tic Tac Toe game with a reliable Artificial Intel
 ## Abstract
 **Minimax is a decision rule used in artificial intelligence, decision theory, game theory, statistics, and philosophy for minimizing the possible loss for a worst case scenario. When dealing with gains, it is referred to as "maximin"—to maximize the minimum gain.**
 
-In algorithms, **minimax** is a recursive program written to find the best gameplay that minimizes any tendency to lose a game while maximizing any opportunity to win the game.
+In algorithms, **minimax** is a backtracking recursive program written to find the best gameplay that minimizes any tendency to lose a game while maximizing any opportunity to win the game.
 
 ![](https://github.com/IdealisticINTJ/Tic-Tac-Toe_Minimax-algorithm/blob/main/ALGO.png)
 
 ## Algorithm explanation
 
-A Minimax algorithm can be best defined as a recursive function that does the following things:
+In layman's terms, a Minimax algorithm can be best defined as a recursive function that does the following things:
 
 - Return a value if a terminal state is found (+10, 0, -10)
 - Go through available spots on the board
