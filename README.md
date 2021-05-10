@@ -6,6 +6,8 @@ I tried building an unbeatable Tic Tac Toe game with a reliable Artificial Intel
 
 In algorithms, **minimax** is a recursive program written to find the best gameplay that minimizes any tendency to lose a game while maximizing any opportunity to win the game.
 
+![](https://github.com/IdealisticINTJ/Tic-Tac-Toe_Minimax-algorithm/blob/main/ALGO.png)
+
 ## Algorithm explanation
 
 A Minimax algorithm can be best defined as a recursive function that does the following things:
@@ -21,6 +23,7 @@ Once in a terminal state, the AI will assign an arbitrary positive score (+10) f
  
 ~> At the same time, the algorithm evaluates the moves that lead to a terminal state based on the players’ turn. It will choose the move with maximum score when it is the AI’s turn and choose the move with the minimum score when it is the human player’s turn. 
 Using this strategy, Minimax avoids losing to the human player.
+
 ## Pseudocode
 ~~~~
 function minimax(node, depth, maximizingPlayer) is
