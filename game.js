@@ -14,7 +14,8 @@ var currentGame;
       [0, 0, 0],
       [0, 0, 0],
       [0, 0, 0]
-    ]; //game board
+    ];
+    //game board
     this.winConditions = [
       [0, 1, 2],
       [3, 4, 5],
@@ -24,15 +25,17 @@ var currentGame;
       [2, 5, 8],
       [0, 4, 8],
       [2, 4, 6]
-    ]; //indecies of winning positions
+    ]; 
+    // indicies of winning positions
     this.status = "active";
-    this.ai = ai; //ai can be 1 or 2
+    this.ai = ai; // ai can be 1 or 2
     this.aiWinCombo = aiWin; // "1,1,1" or "2,2,2";
-    this.human = human; ////human can be 1 or 2    
+    this.human = human; // human can be 1 or 2    
     this.humanWinCombo = humanWin;
   };
 
-  Game.prototype.setValue = function(x, y, player) { //places a number on the board
+  Game.prototype.setValue = function(x, y, player) { 
+    //places a number on the board
     this.board[x][y] = player; // make a move
   };
 
@@ -45,7 +48,7 @@ var currentGame;
     for (var i = 0; i < combo.length; i++) {
       var toTest = [];
       for (var j = 0; j < combo[i].length; j++) {
-        toTest.push(flattened[combo[i][j]]); //makes array of numbers using indecies from win conditions
+        toTest.push(flattened[combo[i][j]]); //makes array of numbers using indicies from win conditions
       }
       if (toTest.toString() === this.aiWinCombo) { //checks for win
         this.status = "ai";
@@ -62,7 +65,7 @@ var currentGame;
     }
   };
 
-  Game.prototype.updateButtons = function() { //puts x's and o's on the board
+  Game.prototype.updateButtons = function() { // puts x's and o's on the board
     for (var i = 0; i < 3; i++) {
       for (var j = 0; j < 3; j++) {
         if (this.board[i][j] === 1) {
@@ -78,7 +81,7 @@ var currentGame;
   Game.prototype.highlightCells = function() {
     var toHighlight = [];
     for (var i = 0; i < winCombo.length; i++) {
-      //Get winning cells coordinates;
+      // Get winning cells coordinates;
       if (winCombo[i] <= 2) {
         toHighlight.push([0, winCombo[i]]);
       } else if (winCombo[i] <= 5) {
@@ -117,7 +120,7 @@ var currentGame;
   };
 
   Ai.prototype.firstMove = function(player) { 
-    //when AI goes first it makes a random perfect move to speed things up
+    // when AI goes first it makes a random perfect move to speed things up
     var perfectMoves = [
       [0, 0],
       [0, 2],
@@ -136,7 +139,7 @@ var currentGame;
   Ai.prototype.findBestMove = function(player) {
     currentGame.checkVictory();
     if (currentGame.status === "ai") {
-      return [10, currentGame.board]; //Score is the element with index 0 in the array of boards/scores
+      return [10, currentGame.board]; // Score is the element with index 0 in the array of boards/scores
     } else if (currentGame.status === "human") {
       return [-10, currentGame.board];
     } else if (currentGame.status === "tie") {
