@@ -41,4 +41,9 @@ function minimax(node, depth, maximizingPlayer) is
         return value
 ```
 
+### Game Theory Resources:
+- [Game Theory (Stanford Encyclopedia of Philosophy)](https://plato.stanford.edu/entries/game-theory/): An in-depth overview of game theory principles.
+- Multi-Agent Systems (Book): A book that delves into multi-agent systems and their applications in game theory.
+- [Game Theory (MIT OpenCourseWare)](https://ocw.mit.edu/courses/economics/14-126-game-theory-and-economic-application-spring-2003/index.htm): Lecture notes and materials from MIT's Game Theory course.
+- [Algorithmic Game Theory (Tim Roughgarden's Stanford Course)](https://timroughgarden.org/f13/f13.html): Explore advanced topics in algorithmic game theory with lecture notes and videos.
 
